@@ -1,52 +1,76 @@
-/* ========================================
+/* =========================================
    Float Practice
-======================================== */
+   ========================================= */
 
-
-
-
-
-
-
-
-
-/* ========================================
+/* =========================================
    Base Page Styles
-======================================== */
+   ========================================= */
+
 body {
-  padding: 1rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  line-height: 1.4;
-  max-width: 900px;
-  margin: 0 auto;
+    padding: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 h1 {
-  font-size: 2rem;
-  border-bottom: 1px solid silver;
-  margin-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 1px solid silver;
+    margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 1.5rem;
-  border-bottom: 1px solid silver;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid silver;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 p {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Makes code examples stand out in the page text */
 code {
-  background-color: gainsboro;
-  border: 1px solid silver;
-  border-radius: 4px;
-  padding: 0.1rem 0.3rem;
-  font-family: Consolas, Monaco, 'Courier New', monospace;
-  font-size: 0.95em;
+    background-color: gainsboro;
+    border: 1px solid silver;
+    border-radius: 4px;
+    padding: 0.1rem 0.3rem;
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+    font-size: 0.95em;
 }
 
+/* =========================================
+   Floating Figures
+   ========================================= */
 
+/* First figure floats to the right */
+.cats-right {
+    float: right;
+    background-color: gainsboro;
+    padding: 1rem;
+    width: 40%;
+    margin: 0 0 1rem 1rem;
+}
 
+/* Second figure floats to the left */
+.cat-left {
+    float: left;
+    background-color: gainsboro;
+    padding: 1rem;
+    width: 40%;
+    margin: 0 1rem 1rem 0;
+}
+
+/* Responsive images */
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Start the notes section below the floated figures */
+.float-notes {
+    clear: both;
+}
